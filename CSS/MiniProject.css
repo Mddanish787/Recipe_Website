@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
+
+}
+
+#maindiv{
+    display: flex;
+    padding: 0.6rem;
+}
+#navList{
+    width: 100%;
+    margin-right: 1rem;
+    padding: 1rem;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+    /* position: fixed; */
+    
+}
+.navContainer{
+    width: 100vw;
+    min-height: 5rem;
+    background-color: #274e65;
+    background-image: linear-gradient(160deg, #1e4c67 0%, #372c6b 100%);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    z-index: 999; */
+
+}
+
+#navLogo{
+    font-size: 2.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+#navLogo:hover{
+    cursor: pointer;
+}
+
+#navTab a{
+    text-decoration: none;
+    color: white;
+}
+
+#navTab {
+    display: flex;
+    gap: 2rem;
+}
+
+.contentBox{
+    width: 55%;
+    margin: auto;
+    background-color: white;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 3rem;
+    box-shadow: 0px 0px 4rem black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 1.3s linear;
+    
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(103, 92, 92, 0.274);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1.3s linear;
+}
+
+
+.rightBox .overlay:hover{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: white;
+    background-color: rgba(82, 81, 81, 0.495);
+    font-size: 1.2rem;
+}
+.rightBox img{
+    height: 400px;
+   border-radius: 1rem;
+   transition: all 1.3s linear;
+   box-shadow: 1px 1px 2rem black;
+}
+
+.rightBox:hover{
+    transform: scale(1.1);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.leftBox h2{
+    font-size: 2rem;
+}
+
+.ingBox{
+    font-size: 1.3rem;
+}
+
+#recBox{
+    font-size: 1.1rem;
+}
+.footerBox{
+    background-color: #597b88;
+    background-image: linear-gradient(160deg, #597b88 0%, #80D0C7 100%);
+    width: 100%;
+    height: 2.5rem;
+    text-align: center; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer{
+    display: flex;
+    align-items: end;
+}
+.footerBox p{
+    color: azure;
+    font-size: 1.5rem;
+}
